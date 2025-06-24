@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f9fc;
+}
+
+.App {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.create-promo-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  margin: 20px auto;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-promo-btn:hover {
+  background-color: #218838;
+}
+
+
+.app-layout {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 220px;
+  padding: 40px;
+  width: calc(100% - 220px);
+}
