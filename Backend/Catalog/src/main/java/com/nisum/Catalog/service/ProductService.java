@@ -70,6 +70,8 @@ public class ProductService {
             Optional<ProductInventory> inventoryOpt = ProductInventoryRepository.findById(pc.getSKU());
 
             return ProductResponse.builder()
+                    .productId(pc.getProductId())                       // ✅ Include ID
+                    .categoryId(pc.getCategoryId())                     // ✅ Include ID
                     .productName(productOpt.map(Product::getProductName).orElse("Unknown"))
                     .categoryName(categoryOpt.map(Category::getCategoryName).orElse("Unknown"))
                     .sku(pc.getSKU())
@@ -80,6 +82,7 @@ public class ProductService {
                     .build();
         }).collect(Collectors.toList());
     }
+
 
     public void updateProduct(ProductUpdateRequest request) {
         Integer oldProductId = request.getOriginalProductId();

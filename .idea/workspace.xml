@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3303ae1-565b-4e28-8203-b726a2a49c87" name="Changes" comment="." />
+    <list default="true" id="a3303ae1-565b-4e28-8203-b726a2a49c87" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/Catalog/src/main/java/com/nisum/Catalog/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Catalog/src/main/java/com/nisum/Catalog/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/Catalog/src/main/java/com/nisum/Catalog/entity/ProductResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Catalog/src/main/java/com/nisum/Catalog/entity/ProductResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/Catalog/src/main/java/com/nisum/Catalog/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Catalog/src/main/java/com/nisum/Catalog/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/ProductForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/ProductForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/ProductTable.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/ProductTable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/ProductTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/ProductTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/PromoModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/PromoModal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/Sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/catalog-ui/src/components/Sidebar.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +33,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/adishikhar/Sprint3_project.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/adishikhar/Project.git&quot;,
     &quot;accountId&quot;: &quot;bf8e6115-0ee3-40d9-b857-954d40ec263d&quot;
   }
 }</component>
@@ -34,25 +45,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "Database connection parameters found",
-    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/KIIT/Desktop/Sprint3_project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;Database connection parameters found&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/KIIT/Desktop/Sprint3_project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="CatalogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Catalog" />
@@ -85,7 +96,9 @@
       <workItem from="1750793129948" duration="6000" />
       <workItem from="1750793144954" duration="341000" />
       <workItem from="1750793518164" duration="165000" />
-      <workItem from="1750793704817" duration="21000" />
+      <workItem from="1750793704817" duration="245000" />
+      <workItem from="1750794010047" duration="16000" />
+      <workItem from="1750803403620" duration="124000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />

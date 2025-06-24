@@ -6,9 +6,9 @@ const Sidebar: React.FC = () => {
     <div className="sidebar">
       <h2>Catalog<br />Management</h2>
       <ul>
-        <li>Dashboard</li>
-        <li>Add Product</li>
-        <li>Create Promo Code</li>
+        <li><span role="img" aria-label="dashboard">📊</span> Dashboard</li>
+        <li><span role="img" aria-label="product">📦</span> Add Product</li>
+        <li><span role="img" aria-label="promo">🎟️</span> Create Promo Code</li>
       </ul>
     </div>
   );

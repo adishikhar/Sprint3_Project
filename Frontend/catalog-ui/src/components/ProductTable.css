@@ -1,38 +1,61 @@
+.product-table-container {
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: auto;
+}
+
 .product-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 30px 0;
-  background-color: white;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.product-table thead {
+  background-color: #f9fafb;
 }
 
 .product-table th,
 .product-table td {
-  padding: 12px 15px;
-  border: 1px solid #ddd;
-  text-align: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
 }
 
-.product-table th {
-  background-color: #f1f1f1;
-  font-weight: bold;
+.product-table tbody tr:hover {
+  background-color: #f3f4f6;
+  transition: background-color 0.2s ease;
 }
 
-.product-table button {
-  margin: 0 4px;
-  padding: 6px 10px;
-  border: none;
-  border-radius: 4px;
+.product-table .action-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
   cursor: pointer;
-  font-size: 14px;
+  margin-right: 6px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.product-table button:first-child {
-  background-color: #17a2b8;
+.product-table .edit-btn {
+  background-color: #fbbf24;
   color: white;
 }
 
-.product-table button:last-child {
-  background-color: #dc3545;
+.product-table .edit-btn:hover {
+  background-color: #f59e0b;
+  transform: scale(1.03);
+}
+
+.product-table .delete-btn {
+  background-color: #ef4444;
   color: white;
+}
+
+.product-table .delete-btn:hover {
+  background-color: #dc2626;
+  transform: scale(1.03);
 }

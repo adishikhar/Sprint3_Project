@@ -1,36 +1,50 @@
 .product-form {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 12px;
-  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+  max-width: 100%;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .product-form input,
 .product-form select {
-  padding: 10px;
+  flex: 1 1 220px;
+  padding: 10px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
   font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-form input:focus,
+.product-form select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
 }
 
 .product-form button {
-  background-color: #007bff;
+  background-color: #3b82f6;
   color: white;
+  font-weight: 600;
   border: none;
+  border-radius: 8px;
   padding: 10px 16px;
-  border-radius: 6px;
+  font-size: 14px;
   cursor: pointer;
-  grid-column: span 2;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .product-form button:hover {
-  background-color: #0056b3;
+  background-color: #2563eb;
+  transform: translateY(-1px);
 }
 
-.error {
-  color: red;
-  font-size: 12px;
-  margin-top: -8px;
-  margin-bottom: 10px;
-  display: block;
+.product-form button:active {
+  transform: scale(0.98);
 }

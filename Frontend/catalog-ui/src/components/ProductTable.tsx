@@ -25,27 +25,35 @@ const ProductTable: React.FC<Props> = ({ products, onRefresh }) => {
   };
 
   const saveEdit = async () => {
-    if (!editData) return;
+  if (!editData || editIndex === null) return;
 
-    const payload: ProductUpdateRequest = {
-      originalProductId: products[editIndex!].productId,
-      originalCategoryId: products[editIndex!].categoryId,
-      originalSku: products[editIndex!].sku,
+  const payload = {
+    
 
-      newProductName: editData.productName,
-      newCategoryName: editData.categoryName,
-      newSku: editData.sku,
-      newSize: editData.size,
-      newColor: editData.color,
-      newPrice: editData.price,
-      newInventoryCount: editData.inventoryCount,
-    };
+    originalProductId: products[editIndex].productId,
+    originalCategoryId: products[editIndex].categoryId,
+    originalSku: products[editIndex].sku,
 
+    newProductName: editData.productName,
+    newCategoryName: editData.categoryName,
+    newSku: editData.sku,
+    newSize: editData.size,
+    newColor: editData.color,
+    newPrice: editData.price,
+    newInventoryCount: editData.inventoryCount
+  };
+
+
+  try {
     await axios.put('http://localhost:8080/api/products', payload);
     setEditIndex(null);
     setEditData(null);
     onRefresh();
-  };
+  } catch (err) {
+    console.error('Error updating product:', err);
+  }
+};
+
 
   const deleteProduct = async (product: ProductResponse) => {
     const payload: ProductDeleteRequest = {

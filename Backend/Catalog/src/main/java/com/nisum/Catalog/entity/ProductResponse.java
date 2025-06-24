@@ -1,12 +1,15 @@
 package com.nisum.Catalog.entity;
 
-import lombok.*;
+
+
+import lombok.Builder;
+import lombok.Data;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Builder
 public class ProductResponse {
+    private Integer productId;
+    private Integer categoryId;
     private String productName;
     private String categoryName;
     private String sku;

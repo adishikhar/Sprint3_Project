@@ -8,6 +8,7 @@ import com.nisum.Catalog.entity.ProductUpdateRequest;
 import com.nisum.Catalog.model.Product;
 import com.nisum.Catalog.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,9 +28,10 @@ public class ProductController {
     }
 
     @GetMapping
-    public List<ProductResponse> getAllProducts() {
-        return productService.getAllProducts();
+    public ResponseEntity<List<ProductResponse>> getAllProducts() {
+        return ResponseEntity.ok(productService.getAllProducts());
     }
+
 
     @PutMapping
     public String updateProduct(@RequestBody ProductUpdateRequest request) {
